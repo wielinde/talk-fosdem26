@@ -18,8 +18,8 @@
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: rgb(13, 17, 23);
 
-$mainColor: #9198a1;
-$headingColor: rgb(116, 156, 187); // rgb(68, 147, 248);
+$mainColor: white; //#9198a1;
+$headingColor: white; // rgb(116, 156, 187); // rgb(68, 147, 248);
 
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
@@ -49,6 +49,9 @@ $heading4Size: 1.0em;
   border-radius: 12px;
   border-color: white;
   border-width: 1px
+}
+.reveal video {
+  border-radius: 12px;
 }
 .reveal img.r-frame.no-border {
   border-width: 0;
