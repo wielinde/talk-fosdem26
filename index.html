@@ -45,7 +45,7 @@
       </h1>
     </section>
 
-    <section data-background-image="images/layout/background.png" data-transition="fade-in fade-out">
+    <section data-background-image="images/layout/background.png" data-transition="slide">
       <h1 class="r-fit-text">OpenProject is a collaborative project management system</h1>
       <video class="home-video" id="home-video" autoplay="" loop="" muted="" playsinline="" poster="images/video-fallback.png" data-src="images/OpenProject-workflow-animation-720p.mp4" data-width-now="700" src="images/OpenProject-workflow-animation-1080p.mp4"></video>
       <aside class="notes">
@@ -63,7 +63,7 @@
         - Well known and familiar
         - Comfortable user experience
         - No installation required
-        - Apps are neatly <span class="underlayed">integrated</span>
+        - Apps are neatly <span class="underlayed">integrated</span>.
         ---
         ## The Open Source ecosystem is scattered
         - Many super professional and established apps, but
@@ -79,6 +79,89 @@
           - ...
         ---
         ## Integrations are hard
+        ---
+        ## Let's make them easier. For all.
+        ---
+        ## Setup
+        Every application does it a bit differently <!-- .element: style="text-align: center" -->
+        - Packeged installations (deb, rpm)
+        - Docker Compose
+        - Virtual machines
+        - Kubernetes
+        - Helm Chart
+        ---
+        ## Provide your own <span class="underlayed">Helm Chart</span>
+        - Your app is a component in bundle?
+        - Provide it as a component!
+        ---
+        ## Single sign-on (SSO)
+        #### Many offer already something:
+        - OAuth2
+        - SAML
+        - LDAP Login
+        - OIDC
+        - ...
+        ---
+        ## Definitely implement <span class="underlayed">OIDC</span>
+        - Wide adoption by Identity and Access Management systems (IAMs)
+        - Relatively simple
+        - Flexible
+        ---
+        ## And centralized logout?
+        #### Many have nothing<br><br>
+        - Provide an API endpoint for central logout.
+        - Implement callback to the IAM to inform it that user has logged out.
+        ---
+        ## Do you support centralized user provisioning?
+        - On first login?
+        - Proprietary API?
+        - LDAP polling?
+        - SCIM?
+        ---
+        ## Implement <span class="underlayed">SCIM</span>!
+        - The lifecycle of users and groups is centralized in your IAM.
+        - Timely and predictable updates via "push".
+        - Managers can work with other user accounts even before those logged-in for the first time.
+        ---
+        ## Summary of the basics so far:
+        - Your application is a component <span class="underlayed">Helm Chart</span>.
+        - Users can centrally login and logout <span class="underlayed">OIDC</span>.
+        - User provisioning is quick and predictable <span class="underlayed">SCIM</span>.
+        ---
+        ## Now, let's finally integrate applications!
+        #### This is where users start recognizing value.
+        ---
+        ## Examples
+        - A file picker of Nextcloud-files in OpenProject to link them with an OpenProject-task.
+        - A list of all Nextcloud-files that are linked to a task in OpenProject with their current name.
+        - Manage access to a shared folder in Nextcloud for all OpenProject-project members, according to their project role.
+        ---
+        ## Application to application request authentication is necessary
+        - Mapping users, e.g. "Which account has Bob in both applications?"
+        - Acting in the name of a user to respect the permission system of the other application.
+        ---
+        ## Access token validation for incoming requests
+        - Bad performance: Check your DB
+        - Worse performance: Check DB of another application via network request
+        ---
+        ## Support JSON Web Tokens <span class="underlayed">JWT</span>!
+        - The token itself is structured data describing what it permits to do.
+        - They are provided and signed by your IdP with a secret certificate.
+        - Super fast validation with public certificate: No DB or network request needed.
+        - Big benefit: You keep central access control in your IAM
+        ---
+        ## What about JWT for outgoing requests?
+        - Your IdP can provide you with additional access tokens.
+        - Access token can be limited to a specific application (and direction).
+        ---
+        ## Implement <span class="underlayed">Token Exchange</span>!
+        ---
+        ## Cross application system-user interaction?
+        ---
+        ## Of course <span class="underlayed">Token Exchange</span>, again!
+        ---
+        ## Seamless integrations build on
+        #### <span class="underlayed">Helm</span> <span class="underlayed">OIDC</span> <span class="underlayed">SCIM</span> <span class="underlayed">JWT</span> <span class="underlayed">Token Exchage</span>
       </textarea>
     </section>
 
