@@ -72,12 +72,11 @@ strong {
 
 .footer {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -102px;
+  right: 0;
+  width: 306px;
   .logo {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
     .svg-text {
       fill: white;
     }
