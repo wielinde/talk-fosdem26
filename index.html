@@ -35,8 +35,8 @@
       </p>
     </section>
 
-    <section data-background-image="images/2024/OpenProject-Teambild-b659df76.webp">
-      <h1 style="text-align: left; margin-top: -250px; margin-left: 150px;">
+    <section data-background-image="images/2024/OpenProject-Teambild-b659df76.webp" data-hide-footer="true">
+      <h1 style="text-align: left; margin-top: -260px; margin-left: 130px;">
         Hello!
       </h1>
     </section>
@@ -49,63 +49,58 @@
       </aside>
     </section>
 
-    <section data-background-image="images/layout/background.png" data-transition="fade fade-out">
-      <h1>
-        <span>
-          BlockNote
-        </span>
-      </h1>
-      <h3>
-        "Build a Notion-style editor in minutes."
-      </h3>
-    </section>
-
     <section data-markdown data-transition="fade-in fade-out">
       <textarea data-template>
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Automatic work package subjects
         ---
-        <!-- .slide: data-background-image="images/2026/automaticwpsubject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/automaticwpsubject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### High contrast mode, dark and light
         ---
-        <!-- .slide: data-background-image="images/2026/contrastmode.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/contrastmode.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### iCal for Meetings
         ---
-        <!-- .slide: data-background-image="images/2026/icalendar.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/icalendar.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Internal comments
-        ___
-        <!-- .slide: data-background-image="images/2026/internal_comment.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        ---
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/internal_comment.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Project portfolio management
         ---
-        <!-- .slide: data-background-image="images/2026/portfolioprogramproject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/portfolioprogramproject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Project Evaluation and Scoring
         ---
-        <!-- .slide: data-background-image="images/2026/projectevaluationandscoring.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/projectevaluationandscoring.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Search
         ---
-        <!-- .slide: data-background-image="images/2026/search.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/search.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ### Documents with real-time collaboration
         ---
-        <!-- .slide: data-background-image="images/2026/real_time_collaboration.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/real_time_collaboration.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
+        ## BlockNote rocks 🤘
+        #### "Build a Notion-style editor in minutes."
+        #### Used in Docs/Notes module of
+        - 🥨 openDesk
+        - 🥖 LaSuite
+        - 🧀 MijnBureau
         <!-- .slide: data-background-image="images/layout/background.png" -->
         ## SCIM
         ---
-        <!-- .slide: data-background-image="images/2026/scim_api.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
+        <!-- .slide: data-hide-footer="true" data-background-image="images/2026/scim_api.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
         ## OpenProject as a component of
         - ☁️ Nextcloud Hub
@@ -219,7 +214,7 @@
     plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
   });
 
-  // Toggle footer visibility based on data-hide-footer attribute
+  // Toggle footer visibility based on data-hide-footer="true" attribute
   const footer = document.querySelector('.footer');
   function updateFooterVisibility() {
       console.log("updateFooterVisibility");
