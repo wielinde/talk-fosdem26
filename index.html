@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>OpenProject: A Review of the Latest Features and Innovations</title>
+  <title>OpenProject: A year Full of Updates</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -19,14 +19,12 @@
 <div class="reveal">
   <div class="slides">
     <section data-background-image="images/layout/background.png" data-transition="fade fade-out">
-      <h1><span>Seamless</span></h1>
-      <h3>
+      <h3><span>OpenProject</span></h3>
+      <h1>
         <span>
-          Key Lessons Learned from Integrating with
-          <span class="underlayed">openDesk</span> and
-          <span class="underlayed">Nextcloud Hub</span>
+          A year Full of Updates
         </span>
-      </h3>
+      </h1>
       <p style="margin-top: 11rem;">
         <small>
           Wieland Lindenthal - Co-founder and CTO of OpenProject<br>
@@ -37,15 +35,13 @@
       </p>
     </section>
 
-    <section data-background-image="images/layout/background.png" data-transition="fade fade-out">
-      <h1>
-        <span>
-          ... and <span class="underlayed">Mijn Bureau</span>
-        </span>
+    <section data-background-image="images/2024/OpenProject-Teambild-b659df76.webp">
+      <h1 style="text-align: left; margin-top: -250px; margin-left: 150px;">
+        Hello!
       </h1>
     </section>
 
-    <section data-background-image="images/layout/background.png" data-transition="slide">
+    <section data-background-image="images/layout/background.png" data-transition="slide" data-hide-footer="true">
       <h1 class="r-fit-text">OpenProject is a collaborative project management system</h1>
       <video class="home-video" id="home-video" autoplay="" loop="" muted="" playsinline="" poster="images/video-fallback.png" data-src="images/OpenProject-workflow-animation-720p.mp4" data-width-now="700" src="images/OpenProject-workflow-animation-1080p.mp4"></video>
       <aside class="notes">
@@ -53,113 +49,68 @@
       </aside>
     </section>
 
-    <section data-markdown data-background-image="images/layout/background.png" data-transition="fade-in fade-out">
+    <section data-background-image="images/layout/background.png" data-transition="fade fade-out">
+      <h1>
+        <span>
+          BlockNote
+        </span>
+      </h1>
+      <h3>
+        "Build a Notion-style editor in minutes."
+      </h3>
+    </section>
+
+    <section data-markdown data-transition="fade-in fade-out">
       <textarea data-template>
-        ## The FOSS challenge: Competing with Big Tech's app suites
-        - Google Workspace
-        - Microsoft 365
-        - Atlassian with Jira and Confluence
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Automatic work package subjects
         ---
-        ### Convenience is their success
-        - Well known and familiar
-        - Comfortable user experience
-        - No installation required
-        - Apps are neatly <span class="underlayed">integrated</span>.
+        <!-- .slide: data-background-image="images/2026/automaticwpsubject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## The Open Source ecosystem is scattered
-        - Many super professional and established apps, but
-        - they are challenging to setup and
-        - they are <span class="underlayed">not integrated</span>
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### High contrast mode, dark and light
         ---
-        ## The Open Source ecosystem's answer
-        - Let's build our own App suites:
-          - 🥨 openDesk
-          - 🥐 LaSuite
-          - ☁️ Nextcloud Hub
-          - 🧀 Mijn Bureau
-          - ...
+        <!-- .slide: data-background-image="images/2026/contrastmode.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Integrations are hard
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### iCal for Meetings
         ---
-        ## Let's make them easier. For all.
+        <!-- .slide: data-background-image="images/2026/icalendar.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Setup
-        Every application does it a bit differently <!-- .element: style="text-align: center" -->
-        - Packeged installations (deb, rpm)
-        - Docker Compose
-        - Virtual machines
-        - Kubernetes
-        - Helm Chart
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Internal comments
+        ___
+        <!-- .slide: data-background-image="images/2026/internal_comment.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Provide your own <span class="underlayed">Helm Chart</span>
-        - Your app is a component in bundle?
-        - Provide it as a component!
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Project portfolio management
         ---
-        ## Single sign-on (SSO)
-        #### Many offer already something:
-        - OAuth2
-        - SAML
-        - LDAP Login
-        - OIDC
-        - ...
+        <!-- .slide: data-background-image="images/2026/portfolioprogramproject.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Definitely implement <span class="underlayed">OIDC</span>
-        - Wide adoption by Identity and Access Management systems (IAMs)
-        - Relatively simple
-        - Flexible
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Project Evaluation and Scoring
         ---
-        ## And centralized logout?
-        #### Many have nothing<br><br>
-        - Provide an API endpoint for central logout.
-        - Implement callback to the IAM to inform it that user has logged out.
+        <!-- .slide: data-background-image="images/2026/projectevaluationandscoring.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Do you support centralized user provisioning?
-        - On first login?
-        - Proprietary API?
-        - LDAP polling?
-        - SCIM?
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Search
         ---
-        ## Implement <span class="underlayed">SCIM</span>!
-        - The lifecycle of users and groups is centralized in your IAM.
-        - Timely and predictable updates via "push".
-        - Managers can work with other user accounts even before those logged-in for the first time.
+        <!-- .slide: data-background-image="images/2026/search.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Summary of the basics so far:
-        - Your application is a component <span class="underlayed">Helm Chart</span>.
-        - Users can centrally login and logout <span class="underlayed">OIDC</span>.
-        - User provisioning is quick and predictable <span class="underlayed">SCIM</span>.
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Documents with real-time collaboration
         ---
-        ## Now, let's finally integrate applications!
-        #### This is where users start recognizing value.
+        <!-- .slide: data-background-image="images/2026/real_time_collaboration.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Examples
-        - A file picker of Nextcloud-files in OpenProject to link them with an OpenProject-task.
-        - A list of all Nextcloud-files that are linked to a task in OpenProject with their current name.
-        - Manage access to a shared folder in Nextcloud for all OpenProject-project members, according to their project role.
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ## SCIM
         ---
-        ## Application to application request authentication is necessary
-        - Mapping users, e.g. "Which account has Bob in both applications?"
-        - Acting in the name of a user to respect the permission system of the other application.
+        <!-- .slide: data-background-image="images/2026/scim_api.gif" data-background-size="contain" data-background-repeat="no-repeat" data-background-color="#3b0944" -->
         ---
-        ## Access token validation for incoming requests
-        - Bad performance: Check your DB
-        - Worse performance: Check DB of another application via network request
-        ---
-        ## Support JSON Web Tokens <span class="underlayed">JWT</span>!
-        - The token itself is structured data describing what it permits to do.
-        - They are provided and signed by your IdP with a secret certificate.
-        - Super fast validation with public certificate: No DB or network request needed.
-        - Big benefit: You keep central access control in your IAM
-        ---
-        ## What about JWT for outgoing requests?
-        - Your IdP can provide you with additional access tokens.
-        - Access token can be limited to a specific application (and direction).
-        ---
-        ## Implement <span class="underlayed">Token Exchange</span>!
-        ---
-        ## Cross application system-user interaction?
-        ---
-        ## Of course <span class="underlayed">Token Exchange</span>, again!
+        ## OpenProject as a component of
+        - ☁️ Nextcloud Hub
+        - 🥨 openDesk
+        - 🧀 MijnBureau
         ---
         ## Seamless integrations build on
         #### <span class="underlayed">Helm</span> <span class="underlayed">OIDC</span> <span class="underlayed">SCIM</span> <span class="underlayed">JWT</span> <span class="underlayed">Token Exchange</span>
@@ -168,17 +119,42 @@
 
     <section>
       <h3 id="openproject-2024-rapid-innovation-and-user-driven-improvements">
-        Visit us at our stand <span class="underlayed">3D18</span>
+        Atlassian announced end of "Data Center" for 2029
       </h3>
-      <img class="r-frame no-border" width="500px" src="images/2024/OpenProject-Teambild-b659df76.webp">
+      <img src="images/2026/jira-alternative.png" class="r-frame no-border" width="1100px" >
+      <h4>Sovereign Jira and Confluence alternative</h4>
     </section>
+
+    <section data-markdown data-transition="fade-in fade-out">
+      <textarea data-template>
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Integration with XWiki by end of June.
+        - Link work packages with Wiki pages
+        - Many nice macros about work packages in XWiki
+        ---
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Migration wizzard
+        - Recreate Jira projects and issues in OpenProject
+        - First version end of Q1. Then continuous enhancements.
+        ---
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Improved Agile project management
+        - Sprint planning independent of versions
+        - Backlog management
+        - Continuous improvements in Q1 and Q2
+        ---
+        <!-- .slide: data-background-image="images/layout/background.png" -->
+        ### Jira fundamentals added
+        - "Speaking" work package identifiers, e.g. "POC-34"
+        - Backlog management
+        - Continuous improvements in Q1 and Q2
+      </textarea>
+    </section>
+
+
 
     <section>
       <h1 class="r-fit-text">Integrated we are stronger</h1>
-      <div>
-        <br>
-        <span class="underlayed">Level -3, stand 3D18</span>
-      </div>
       <p style="margin-top: 10rem;">
         <small>
           Wieland Lindenthal - Co-founder and CTO of OpenProject<br>
@@ -242,6 +218,20 @@
     // Learn about plugins: https://revealjs.com/plugins/
     plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
   });
+
+  // Toggle footer visibility based on data-hide-footer attribute
+  const footer = document.querySelector('.footer');
+  function updateFooterVisibility() {
+      console.log("updateFooterVisibility");
+    const currentSlide = Reveal.getCurrentSlide();
+    if (currentSlide && currentSlide.hasAttribute('data-hide-footer')) {
+      footer.classList.add('hidden');
+    } else {
+      footer.classList.remove('hidden');
+    }
+  }
+  Reveal.on('slidechanged', updateFooterVisibility);
+  Reveal.on('ready', updateFooterVisibility);
 </script>
 </body>
 </html>

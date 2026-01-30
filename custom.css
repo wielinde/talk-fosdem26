@@ -7,3 +7,8 @@ p, ul {
 .col{
     flex: 1;
 }
+
+.footer.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
