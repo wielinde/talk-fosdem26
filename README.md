@@ -1,6 +1,6 @@
 These are the slide for a talk. They run on GitHub pages:
 
-https://wielinde.github.io/talk-osxp-2025
+https://wielinde.github.io/talk-fosdem26
 
 To run the slide locally:
 
